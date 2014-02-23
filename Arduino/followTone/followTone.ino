@@ -4,7 +4,7 @@
  Plays a pitch that changes based on a changing analog input
  
  circuit:
- * 8-ohm speaker through a 100 ohm resistor on digital pin 9
+ * 8-ohm speaker through a 100 ohm resistor on digital pin 8
  * potentiometer middle in input A0
  * potentiometer ends in ground and 5V
  
@@ -26,7 +26,7 @@ void loop() {
   int thisPitch = map(sensorReading, 0, 1024, 400, 1500);
 
   // play the pitch:
-  tone(9, thisPitch, 50);
+  tone(8, thisPitch, 50);
   delay(100);        // delay in between reads for stability
 }
 
